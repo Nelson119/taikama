@@ -1,0 +1,81 @@
+<!--登錄發票-->
+<section class="form section" role="form">
+	
+    <picture class="background hidden-xs" data-src="img/form/bg.jpg"></picture>
+    <picture class="background visible-xs" data-src="img/form/bg-m.jpg"></picture>
+	<aside class="viewport">
+        <aside class="inner">
+            <h3 class="title"><img class="hidden-xs" alt="登錄發票 抽保庇" data-src="img/form/title.png"></h3>
+            <form action="http://www.twbeer-dajiamazu.com.tw/api/add.ashx" method="post">
+                <aside class="fields">
+                    <aside class="row">
+                        <aside class="col-xs-3 form-label">
+                            <label>發票號碼</label>
+                        </aside>
+                        <aside class="col-xs-9 form-field">
+                            <input data-validate="^\w{2}\d{8}$" maxlength="10" required class="form-control" placeholder="XX00000000" type="text" name="uInvoiceNumber">
+                        </aside>
+                    </aside>
+                    <aside class="row">
+                        <aside class="col-xs-3 form-label">
+                            <label>姓　　名</label>
+                        </aside>
+                        <aside class="col-xs-9 form-field">
+                            <input required class="form-control" placeholder="請輸入真實姓名" type="text" name="uName">
+                        </aside>
+                    </aside>
+                    <aside class="row">
+                        <aside class="col-xs-3 form-label">
+                            <label>電話號碼</label>
+                        </aside>
+                        <aside class="col-xs-9 form-field">
+                            <input data-validate="^\d{9,10}$" required class="form-control" placeholder="請輸入手機號碼" type="text" name="uPhone">
+                        </aside>
+                    </aside>
+                    <aside class="row">
+                        <aside class="col-xs-3 form-label">
+                            <label>E-mail</label>
+                        </aside>
+                        <aside class="col-xs-9 form-field">
+                            <input data-validate="^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" required class="form-control" placeholder="請輸入電子信箱" type="text" name="uEmail">
+                        </aside>
+                    </aside>
+                    <aside class="row">
+                        <aside class="col-xs-3 form-label">
+                            <label>地　　址</label>
+                        </aside>
+                        <aside class="col-xs-9 form-field">
+                            <input required class="form-control" placeholder="請輸入收件地址" type="text" name="uAddress">
+                        </aside>
+                    </aside>
+                    <aside class="row">
+                        <aside class="col-xs-12 highlight">
+                            <span class="hl">※ 請務必留下真實資料，以利得獎通知及獎項寄送</span>
+                        </aside>
+                    </aside>
+                    <aside class="row">
+                        <aside class="col-xs-12">
+                            <input required name="read" id="chkprivate" type="checkbox"><label for="chkprivate">我已詳細閱讀<a href="#notice" class="veno" data-vbtype="inline">注意事項</a>，並且同意遵守台啤活動小組蒐集、處理及利用個人資料之告知事項。</label>
+                        </aside>
+                        <aside class="col-xs-12">
+                            <input required name="term" id="chkterm" type="checkbox"><label for="chkterm">資料有任何錯誤，將視為棄權。</label>
+                        </aside>
+                    </aside>
+                </aside>
+                <aside class="row">
+                    <aside class="col-xs-12 text-center">
+                        <button
+                        class="g-recaptcha"
+                        data-sitekey="6LdnxE4UAAAAAIzmqr55rmQ239af9SwpWrbDWjjI"
+                        data-callback="YourOnSubmitFn">
+                        <img data-src="img/form/submit.png">
+                        </button>
+                        <!-- <button type="submit"><img data-src="img/form/submit.png"></button> -->
+                    </aside>
+                </aside>
+            </form>
+            <picture class="bubble" data-src="img/form/bubble.png"></picture>
+        </aside>
+	</aside>
+</section>
+<!--./登錄發票-->

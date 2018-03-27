@@ -1,0 +1,92 @@
+
+.landing-pop,.stop-pop{
+    background: url(../img/landing/bg.jpg) no-repeat center top/cover;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left:0;
+    top: 0;
+    font-size: 18px;
+    z-index: 1;
+    @media screen and (max-width: #{$screen-sm - 1}) {
+        background: none;
+    }
+    .center{
+        width: 800px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @media screen and (max-width: #{$screen-sm - 1}) {
+            top: 0;
+            left: 0;
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+            z-index:10;
+        }
+        .visual{
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: per(-500,1000) 0 0 per(-528, 1000);
+            width: per(955, 1000);
+            @media screen and (max-width: #{$screen-sm - 1}) {
+                margin: 0;
+                width: 100%;
+            }
+        }
+        .visual-keep{
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: per(-362,1000) 0 0 per(-274, 1000);
+            width: per(573, 1000);
+            @media screen and (max-width: #{$screen-sm - 1}) {
+                margin: 0;
+                width: 100%;
+            }
+        }
+    }
+    .veno-close{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: per(261,1000) 0 0 per(-197, 1000);
+        width: per(202, 1000);
+        @media screen and (max-width: #{$screen-sm - 1}) {
+            margin: per(940,750) 0 0 per(116, 750);
+            width: per(258, 750);
+        }
+    }
+    .no{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: per(261,1000) 0 0 per(25, 1000);
+        width: per(202, 1000);
+        @media screen and (max-width: #{$screen-sm - 1}) {
+            margin: per(940,750) 0 0 per(397, 750);
+            width: per(258, 750);
+        }
+
+    }
+}
+.confirm-pop{
+    width: 50vw;
+    margin: 0 auto;
+    position: relative;
+    @media screen and (max-width: #{$screen-sm - 1}) {
+        top: 30vh;
+        width: 76vw;
+    }
+    .visual{
+        width: 100%;
+    }
+    .veno-close{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: per(230,1000) per(-40, 1000) 0 0;
+        width: per(100, 1000);
+    }
+}

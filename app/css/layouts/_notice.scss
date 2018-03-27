@@ -1,0 +1,134 @@
+.vbox-overlay{
+    background: rgba(0,0,0,0.8);
+    z-index: 1040;
+
+    height: 100%;
+}
+.vbox-inline{
+    // padding: 2em;
+    border: 4px solid #ffc017;
+    box-shadow: none;
+    border-radius: 20px;
+    background-color: #f8f8f8;
+
+}
+.vbox-content{
+    margin: 5em 0 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-feature-settings: "liga";
+	font-style: normal;
+	text-rendering: optimizelegibility;
+	letter-spacing:0.5px;
+	word-spacing:0.5px;
+	overflow-x:hidden;
+	position:relative;
+	color: #4a4a4a;
+    font-family: "Noto Sans TC", "microsoft jhenghei", "微軟正黑體", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    padding-bottom: 10vh;
+}
+.vbox-next,.vbox-prev{
+    display: none!important;
+}
+.vbox-close{
+    display: none!important;
+}
+
+.notice-pop{
+    position: relative;
+    height: 100%;
+    font-size: 18px;
+    h3{
+        color: #000;
+        text-align: center;
+        font-size: 28px;
+        padding-top: 1em;
+        margin-top: 0;
+    }
+    p{
+        font-size: 1.6em;
+        a{
+            border: 2px #689bc8 solid;
+            color: #689bc8;
+            box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
+            padding: 10px 22px;
+            margin-left: 1em;
+        }
+    }
+    .center{
+        width: 650px;
+        height: 70%;
+        overflow: auto;
+        margin: 0 auto;
+        position: relative;
+    }
+    .notice{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .veno-close{
+        position: relative;
+        margin: 0 auto;
+        width: per(234, 1200);
+        display: block;
+        img{
+            width: 100%;
+        }
+        @media screen and (max-width: #{$screen-md - 1}) {
+            width: per(275, 750);
+        }
+    }
+    .hint{
+        display: block;
+        position: relative;
+        top: 3em;
+        width: 100%;
+        color: #b8b8b8;
+    }
+    ul{
+        padding-left: 3em;
+        li{
+            margin-top: 1em;
+            list-style: decimal;
+        }
+    }
+}
+@media screen and (max-width: 1366px) {
+    .notice-pop{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .notice-pop{
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .notice-pop{
+    }
+    .venoframe, .vbox-inline {
+        max-width: 1200px;
+        width: 85%;
+        height: 540px;
+        height: 80vh;
+    }
+    .hint{
+        font-size: 12px;
+    }
+    .veno-close{
+        width: 3em;
+        height: 3em;
+        top: 0 ;
+        right: 0;
+    }
+    .vbox-content{
+        font-size: 16px;
+        margin: 0!important;
+        height: 100%!important;
+    }
+    .vbox-inline{
+        height: 100%!important;
+    }
+}

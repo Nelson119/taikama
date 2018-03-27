@@ -1,0 +1,96 @@
+[role=prize]{
+    position: relative;
+    .background{
+        @include SubItem();
+        background: center / cover;
+        @media screen and (max-width: #{$screen-sm - 1}) {
+            position: relative;
+            padding-top: vwxs(1960, 750);
+        }
+    }
+    .viewport{
+        // width: per(1236,1920);
+        // margin: per(50, 1920) auto;
+        // padding-top
+        @include SubItem();
+        @media screen and (max-width: #{$screen-sm - 1}) {
+            // max-width: 100%;
+            // padding-top: 0;
+        }
+        .mid{
+            width: per(1236,2500);
+            // min-width: 800px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -40vh 0 0 per(1236/-2,2500);
+            padding-top: per(948,2500);
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            @media screen and (max-width: #{$screen-sm - 1}) {
+                width: 100%;
+                margin: 0;
+                height: 100%;
+                padding-top: 0;
+                left: 0;
+                top: 0;
+                min-width: 0;
+                background: none!important;
+            }
+        }
+        .wave{
+            position: absolute;
+            top:0;
+            left:0;
+            margin: per(737,1236) 0 0 per(76,1236);
+            width: per(292, 1236);
+            height: auto;
+            @media screen and (max-width: #{$screen-sm - 1}) {
+                width: per(312,750);
+                margin: per(1537,750) 0 0 per(70,750);
+            }
+        }
+        .items{
+            @media screen and (max-width: #{$screen-sm - 1}) {
+                width: 100%;
+                position: relative;
+                padding-top: 0;
+                height: auto;
+            }
+            img{
+                width: 100%;
+                height: auto;
+            }
+            li:nth-child(1){
+                position: absolute;
+                top:0;
+                left:0;
+                width: per(450,1236);
+                margin: per(314,1236) 0 0 per(140,1236);
+                @media screen and (max-width: #{$screen-sm - 1}) {
+                    width: per(450,750);
+                    position: relative;
+                    padding-top: 0;
+                    height: auto;
+                    margin: per(572,750) 0 0 per(150,750);
+                }
+            }
+            li:nth-child(2){
+                position: absolute;
+                top:0;
+                left:0;
+                width: per(450,1236);
+                height: auto;
+                margin: per(353,1236) 0 0 per(645,1236);
+                @media screen and (max-width: #{$screen-sm - 1}) {
+                    width: per(450,750);
+                    position: relative;
+                    padding-top: 0;
+                    height: auto;
+                    margin: per(30,750) 0 0 per(150,750);
+                }
+            }
+        }
+    }
+}
+

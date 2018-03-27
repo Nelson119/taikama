@@ -1,0 +1,26 @@
+footer {
+    position: fixed;
+    width: 100%;
+    background: rgba(0,0,0,0.9) ;
+    // background: #000 url(../img/footer/notice.png) center/ auto 100% no-repeat;
+    bottom: 0;
+    z-index: 2000;
+    @media screen and (max-width: #{$screen-sm - 1}) {
+        min-height: 10%;
+        min-height: 10vh;
+    }
+    .viewport{
+        width: per(1043, 1920);
+        min-height: 10vh;
+        padding-top: 1px;
+        @media screen and (max-width: #{$screen-sm - 1}) {
+            width: 100%;
+            position: relative;
+        }
+        img{
+            display: block;
+            margin: 2% auto;
+            width: 96%;
+        }
+    }
+}

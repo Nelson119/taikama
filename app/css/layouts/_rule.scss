@@ -1,0 +1,50 @@
+[role=rule]{
+    .background{
+        @include SubItem();
+        background: center 100vh / cover;
+    }
+    .inner{
+        width: per(1000,1920);
+        height: 60%;
+        top: 50%;
+        left: 50%;
+        min-width: 560px;
+        margin: -32vh 0 0 per(-500,1920);
+        position: absolute;
+        background: #63c67d url(../img/rule/bg.png) no-repeat center/cover;
+        border-radius: 15px;
+        border: 4px solid rgba(0,0,0,0.80);
+        height: 60vh;
+        overflow: visible;
+        padding: 3em 4em;
+        overflow: visible;
+        .avatar1{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: per(291, 1000);
+            margin: per(-96, 1000) 0 0 per(648,1000);
+        }
+        .avatar2{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: per(268, 1000);
+            margin: auto 0 per(-61, 1000) per(-138,1000);
+        }
+        .text{
+            font-size: em(20,18);
+            h4{
+                font-size: em(24,20);
+                margin: 0 auto 1em;
+            }
+            ul,p{
+                margin-bottom: 2em;
+                color: #fff;
+            }
+            height: 100%;
+            overflow: auto;
+        }
+    }
+}
+

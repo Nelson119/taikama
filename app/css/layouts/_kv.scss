@@ -1,0 +1,101 @@
+[role=kv]{
+    .viewport{
+        height: 100%;
+        padding: 0;
+        @media screen and (max-width: #{$screen-sm - 1}) {
+            max-width: 100%;
+            margin: 0;
+        }
+        .background{
+            @include SubItem();
+            background-position: center top;
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            @media screen and (max-width: #{$screen-sm - 1}) {
+                width: 100%;
+                position: relative;
+                padding-top: vwxs(2567, 750);
+            }
+        }
+        .center{
+            width: per(1000,1920);
+            // min-width: 800px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            img{
+                position: absolute;
+            }
+            .troop{
+                width: per(366, 1200);
+                margin: per(239,1200) 0 0 per(447,1200);
+            }
+            .visual{
+                width: per(924, 1200);
+                margin: per(-436,1200) 0 0 per(-459,1200);
+            }
+            .beer{
+                width: per(321, 1200);
+                margin: per(-93,1200) 0 0 per(-810,1200);
+            }
+            .tagline{
+                width: per(528, 1200);
+                margin: per(-397,1200) 0 0 per(-870,1200);
+            }
+            @media screen and (max-width: #{$screen-sm - 1}) {
+                .troop{
+                    width: per(366, 1600);
+                    margin: per(239,1600) 0 0 per(447,1600);
+                }
+                .visual{
+                    width: per(924, 1600);
+                    margin: per(-436,1600) 0 0 per(-459,1600);
+                }
+                .beer{
+                    width: per(321, 1600);
+                    margin: per(-93,1600) 0 0 per(-810,1600);
+                }
+                .tagline{
+                    width: per(528, 1600);
+                    margin: per(-397,1600) 0 0 per(-870,1600);
+                }
+            }
+        }
+    }
+    .btn1{
+        width: per(459,1920);
+        padding-top: per(174,1920);
+        position: fixed;
+        top: 0;
+        right: per(-459,1920);
+        margin: per(217, 1920) 0 0;
+        img{
+            @include SubImgW();
+        }
+    }
+    .btn2{
+        width: per(402,1920);
+        padding-top: per(174,1920);
+        position: fixed;
+        top: 0;
+        right: per(-402,1920);
+        margin: per(400, 1920) 0 0;
+        img{
+            @include SubImgW();
+        }
+    }
+
+    &.loaded{
+        .btn1,.btn2{
+            right: -1em;
+            transition-duration: 0.2s;
+            &:hover{
+                right: 0;
+            }
+        }
+
+    }
+}
+
