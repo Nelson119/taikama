@@ -53,8 +53,8 @@ gulp.task('html', ['sub'], () => {
         // .pipe($.ignore.exclude(/vendor\.js$/))
         // .pipe($.ignore.exclude(/vendor\.css$/))
         .pipe($.uniqueFiles())
-        .pipe($.if(/\.js$/, $.uglify()))
-        .pipe($.if(/\.css$/, $.cssnano()))
+        // .pipe($.if(/\.js$/, $.uglify()))
+        // .pipe($.if(/\.css$/, $.cssnano()))
         // .pipe($.if(/\.html$/, $.htmlmin({ collapseWhitespace: true })))
         // .pipe($.debug())
         .pipe(gulp.dest('dist'));

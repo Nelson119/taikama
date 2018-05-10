@@ -2,9 +2,11 @@
     .viewport{
         height: 100%;
         padding: 0;
+        padding-top: per(933,1920);
         @media screen and (max-width: #{$screen-sm - 1}) {
             max-width: 100%;
             margin: 0;
+            padding: 0;
         }
         .background{
             @include SubItem();
@@ -67,7 +69,7 @@
     .btn1{
         width: per(459,1920);
         padding-top: per(174,1920);
-        position: fixed;
+        position: absolute;
         top: 0;
         right: per(-459,1920);
         margin: per(217, 1920) 0 0;
@@ -78,7 +80,7 @@
     .btn2{
         width: per(402,1920);
         padding-top: per(174,1920);
-        position: fixed;
+        position: absolute;
         top: 0;
         right: per(-402,1920);
         margin: per(400, 1920) 0 0;
@@ -86,7 +88,6 @@
             @include SubImgW();
         }
     }
-
     &.loaded{
         .btn1,.btn2{
             right: -1em;
@@ -95,7 +96,8 @@
                 right: 0;
             }
         }
-
+    
     }
+
 }
 

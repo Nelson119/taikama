@@ -28,8 +28,8 @@
             position: absolute;
             top: 0;
             left: 0;
-            margin: per(-500,1000) 0 0 per(-528, 1000);
-            width: per(955, 1000);
+            margin: per(-500,1000) 0 0 per(-400, 1000);
+            width: per(800, 1000);
             @media screen and (max-width: #{$screen-sm - 1}) {
                 margin: 0;
                 width: 100%;
@@ -39,8 +39,8 @@
             position: absolute;
             top: 0;
             left: 0;
-            margin: per(-362,1000) 0 0 per(-274, 1000);
-            width: per(573, 1000);
+            margin: per(-200,1000) 0 0 per(-100, 1000);
+            width: per(350, 1000);
             @media screen and (max-width: #{$screen-sm - 1}) {
                 margin: 0;
                 width: 100%;
@@ -51,7 +51,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        margin: per(261,1000) 0 0 per(-197, 1000);
+        margin: per(160,1000) 0 0 per(-197, 1000);
         width: per(202, 1000);
         @media screen and (max-width: #{$screen-sm - 1}) {
             margin: per(940,750) 0 0 per(116, 750);
@@ -62,7 +62,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        margin: per(261,1000) 0 0 per(25, 1000);
+        margin: per(160,1000) 0 0 per(25, 1000);
         width: per(202, 1000);
         @media screen and (max-width: #{$screen-sm - 1}) {
             margin: per(940,750) 0 0 per(397, 750);

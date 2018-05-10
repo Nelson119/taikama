@@ -30,7 +30,7 @@ if($ || jQuery){
 		// if(!Cookies.get('over18')){
 		// }
 
-		$('header .btn1,header .btn2').on('click', function(){
+		$('header .btn1,header .btn2,[role=kv] .btn1,[role=kv] .btn2').on('click', function(){
 			var to = $(this).attr('href').replace(/[#]/,'');
 			// console.log($('[role='+to+']'));
 			TweenMax.to('html,body',0.25,{
@@ -76,7 +76,7 @@ if($ || jQuery){
 				// console.log(Cookies.get('over18'));
 				return false;
 			}
-			TweenMax.to('html.mobiel,html.mobile body',0.01,{
+			TweenMax.to('html, body',0.01,{
 				scrollTop: 0
 			});
 		}
@@ -104,6 +104,18 @@ if($ || jQuery){
 	$('header .btn1, header .btn2').on('click', function(){
 		var toggle = document.getElementById('mobileMenuToggle');
 		toggle.checked = !toggle.checked;
+	});
+	var vb = $('.veno-list').venobox({
+		overlayClose: false,
+		bgcolor: 'none',
+		border: 0,
+		cb_post_open  : function(obj, gallIndex, thenext, theprev){
+			$('.vbox-inline.figlio').css('border', 0).css('overflow','visible');
+			$('.veno-close').on('click', function(){
+				vb.VBclose();
+			});
+		}
+	
 	});
 }(app.$));
 

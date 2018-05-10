@@ -1,5 +1,6 @@
 [role=notice7]{
     position: relative;
+    padding-bottom: 10em;
     .background{
         @include SubItem();
         background: center top / cover;
@@ -33,18 +34,19 @@
     .inner{
         width: 90%;
         height: 80%;
-        height: 80vh;
-        top: 50%;
-        left: 50%;
+        // height: 80vh;
+        // top: 50%;
+        // left: 50%;
         min-width: 560px;
-        margin: -50vh 0 0 per(-500,1920);
-        position: absolute;
+        // margin: -50vh 0 0 per(-500,1920);
+        margin: 0 auto;
+        position: relative;
         // background: #eee;
         // border-radius: 15px;
         // border: 4px solid rgba(0,0,0,0.80);
         color: #fff;
         overflow: visible;
-        padding: per(190,1920) 4em 2em;
+        padding: per(0,1920) 4em 2em;
         @media screen and (max-width: #{$screen-sm - 1}) {
             top: 0;
             left: 0;

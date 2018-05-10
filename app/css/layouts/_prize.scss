@@ -1,6 +1,7 @@
 [role=prize]{
     position: relative;
     .background{
+        padding-top: per(1083,1920);
         @include SubItem();
         background: center / cover;
         @media screen and (max-width: #{$screen-sm - 1}) {
@@ -11,11 +12,13 @@
     .viewport{
         // width: per(1236,1920);
         // margin: per(50, 1920) auto;
-        // padding-top
+        padding-top: per(1083,1920);
         @include SubItem();
+        position: relative;
         @media screen and (max-width: #{$screen-sm - 1}) {
             // max-width: 100%;
             // padding-top: 0;
+            position: absolute;
         }
         .mid{
             width: per(1236,2500);
@@ -23,7 +26,8 @@
             position: absolute;
             left: 50%;
             top: 50%;
-            margin: -40vh 0 0 per(1236/-2,2500);
+            margin: -20% 0 0 per(1236/-2,2500);
+            // margin: 0 auto;
             padding-top: per(948,2500);
             background-size: 100% auto;
             background-repeat: no-repeat;
@@ -47,7 +51,7 @@
             height: auto;
             @media screen and (max-width: #{$screen-sm - 1}) {
                 width: per(312,750);
-                margin: per(1537,750) 0 0 per(70,750);
+                margin: per(1595,750) 0 0 per(70,750);
             }
         }
         .items{

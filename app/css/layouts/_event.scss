@@ -1,7 +1,8 @@
 [role=event]{
     position: relative;
-    margin-top: -10%;
+    // margin-top: -10%;
     .viewport{
+        padding-bottom: per(150, 1000) ;
         @media screen and (max-width: #{$screen-sm - 1}) {
             @include SubItem();
             max-width: 100%;
@@ -41,16 +42,15 @@
     }
     .inner{
         width: per(1000,1920);
-        height: 60%;
-        top: 50%;
-        left: 50%;
+        height: auto;
+        // top: 50%;
+        // left: 50%;
         min-width: 560px;
-        margin: -18vh 0 0 per(-500,1920);
-        position: absolute;
+        margin: 10em auto;
+        position: relative;
         background: #eee;
         border-radius: 15px;
         border: 4px solid rgba(0,0,0,0.80);
-        height: 60vh;
         overflow: visible;
         padding: per(190,1920) 4em 2em;
         @media screen and (max-width: #{$screen-sm - 1}) {
